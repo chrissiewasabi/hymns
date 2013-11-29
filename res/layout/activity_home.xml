@@ -1,0 +1,62 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     android:scrollbars="vertical|horizontal" >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded"
+    tools:context=".HomeActivity" >
+
+     <TextView
+        android:id="@+id/tv_song"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:visibility="gone"
+        android:textSize="30sp" />
+    
+    
+    <TextView
+        android:id="@+id/tv_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:padding="15dp"
+        android:text="@string/title"
+        android:textStyle="bold"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/tv_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_home"
+        android:layout_centerHorizontal="true"
+        
+        android:text="@string/mid"
+        android:textStyle="bold"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/tv_book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_about"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:text="@string/last"
+       android:textStyle="bold"
+        android:textSize="30sp"
+         />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_musical" />
+
+</RelativeLayout>
+</ScrollView>
